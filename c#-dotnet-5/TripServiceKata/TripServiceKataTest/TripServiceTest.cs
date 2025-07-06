@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using TripServiceKata.Services;
 using TripServiceKata.Model;
+using System.Collections.Generic;
 
 namespace TripServiceKata.Tests;
 
@@ -10,6 +11,7 @@ public class TripServiceTest
     [Test]
     public void Foo()
     {
-        Assert.That(false, Is.False);
+        List<string> list = ["a", "b", "c"];
+        Assert.That(list, Is.EquivalentTo(["c", "b", "a"]));
     }
 }
