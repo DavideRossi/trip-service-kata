@@ -1,14 +1,15 @@
-using Xunit;
-using FluentAssertions;
+using NUnit.Framework;
+using TripServiceKata.Services;
+using TripServiceKata.Model;
 
-namespace TripServiceKata.Tests
+namespace TripServiceKata.Tests;
+
+[TestFixture]
+public class TripServiceTest
 {
-    public class TripServiceTest
+    [Test]
+    public void Foo()
     {
-        [Fact]
-        public void Foo()
-        {
-            true.Should().Be(false);
-        }
+        Assert.That(false, Is.False);
     }
 }

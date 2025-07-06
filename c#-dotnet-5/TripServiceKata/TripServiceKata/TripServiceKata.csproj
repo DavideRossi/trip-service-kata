@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Trip\" />
+    <Folder Include="Model\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
