@@ -11,5 +11,10 @@ namespace TripServiceKata.Services
             throw new DependentClassCallDuringUnitTestException(
                         "TripDAO should not be invoked on an unit test.");
         }
+
+        public virtual List<Trip> TripsBy(User user)
+        {
+            return FindTripsByUser(user);
+        }
     }
 }
